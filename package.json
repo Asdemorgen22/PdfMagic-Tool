@@ -1,0 +1,36 @@
+{
+  "name": "pdfmagictool-app",
+  "productName": "PdfMagicTool",
+  "version": "1.0.0",
+  "description": "PdfMagicTool offline desktop app — split, merge and compress PDFs locally.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --mac --linux",
+    "dist-win": "electron-builder --win",
+    "dist-mac": "electron-builder --mac",
+    "dist-linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.pdfmagictool.app",
+    "productName": "PdfMagicTool",
+    "files": [
+      "index.html",
+      "styles.css",
+      "pdf-tool.js",
+      "manifest.webmanifest",
+      "sw.js",
+      "vendor/**/*",
+      "img/**/*",
+      "icons/**/*",
+      "fonts/**/*"
+    ],
+    "win": { "target": ["nsis", "portable"] },
+    "mac": { "target": ["dmg", "zip"] },
+    "linux": { "target": ["AppImage", "deb"] }
+  }
+}

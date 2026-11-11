@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="#FFFEF9"/>
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="#EDE3D2" stroke-width="10"/>
+  <g>
+    <path d="M256 92 420 224 256 356 92 224Z" fill="#FAA307"/>
+    <path d="M256 92 420 224 256 224Z" fill="#FFD166"/>
+    <path d="M256 92 92 224 256 224Z" fill="#E85D04"/>
+    <path d="M262 112 396 224" stroke="#fff" stroke-width="14" stroke-linecap="round" opacity=".85"/>
+  </g>
+  <text x="256" y="448" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, Arial, sans-serif" font-weight="800" font-size="72" fill="#23272F" letter-spacing="4">PDF</text>
+</svg>

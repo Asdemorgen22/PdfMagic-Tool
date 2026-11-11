@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PdfMagicTool — Split, Merge &amp; Compress PDFs (Offline App)</title>
+<meta name="description" content="Split, merge, and compress PDFs — 100% offline in your browser. Files never leave your device.">
+<meta name="theme-color" content="#FAA307">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<style> html { color-scheme: light; } </style>
+<link rel="stylesheet" href="./styles.css">
+<style>
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 800;font-display:swap;src:url('./fonts/plus-jakarta-sans-latin.woff2') format('woff2');}
+</style>
+</head>
+<body>
+<script src="./vendor/pdf-lib.min.js"></script>
+
+<script src="./vendor/pdf.min.js"></script>
+
+<script src="./vendor/jszip.min.js"></script>
+
+<!-- PdfMagicTool — Local PDF Splitter & Compressor. 100% client-side: files never leave the device. -->
+
+
+<div class="app fold">
+  <header class="fold-header rv d1">
+    <div class="fold-brand">
+      <span class="fold-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="30" height="30"><path d="M32 3 61 32 32 61 3 32Z" fill="#FAA307"/><path d="M32 3 61 32 32 32Z" fill="#FFD166"/><path d="M32 3 32 32 3 32Z" fill="#E85D04"/><path d="M32 8 56 32" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".85"/></svg>
+      </span>
+      <span class="fold-word">PdfMagicTool</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1 class="rv d2">Your PDFs<br>You are running the offline app bundle. · <a class="link" href="./privacy-policy.html">Privacy Policy</a> · <a class="link" href="./terms-of-service.html">Terms</a></footer>
+</div>
+<script src="./pdf-tool.js"></script>
+<script>
+if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener("load", function () { navigator.serviceWorker.register("./sw.js").catch(function () {}); });
+}
+</script>
+</body>
+</html>
